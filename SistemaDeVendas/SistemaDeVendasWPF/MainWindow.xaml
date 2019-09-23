@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu Height="20" VerticalAlignment="Top" 
+              Grid.ColumnSpan="2">
+            <MenuItem Header="Cadastrar">
+                <MenuItem Header="Cliente Pf"    
+                          x:Name="ClienteMenu"
+                          Click="ClienteMenu_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>

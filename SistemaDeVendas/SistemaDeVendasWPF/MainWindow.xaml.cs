@@ -24,5 +24,11 @@ namespace SistemaDeVendasWPF
         {
             InitializeComponent();
         }
+
+        private void ClienteMenu_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new ClienteWindow();
+            window.ShowDialog();
+        }
     }
 }

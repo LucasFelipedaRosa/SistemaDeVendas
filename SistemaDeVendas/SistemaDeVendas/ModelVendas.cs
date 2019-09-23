@@ -24,13 +24,7 @@ namespace SistemaDeVendas
         public virtual DbSet<Mercadoria> Mercadorias { get; set; }
         public virtual DbSet<Endereco> Enderecos { get; set; }
         public virtual DbSet<Cliente> Clientes { get; set; }
-        public virtual DbSet<ClientePj> ClientePjs { get; set; }
-        public virtual DbSet<ClientePf> ClientePfs { get; set; }
     }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+  
 }
