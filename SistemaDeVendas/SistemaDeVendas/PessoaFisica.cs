@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SistemaDeVendas
 {
-    public class Cliente
+    class PessoaFisica : Cliente
     {
-        public int Id { get; set; }
-        public string Nome{ get; set; }
-        public Endereco Enderco { get; set; }
+        public string Cpf { get; set; }
+        public DateTime DataDeNascimento { get; set; } = DateTime.Now;
+
     }
 }
