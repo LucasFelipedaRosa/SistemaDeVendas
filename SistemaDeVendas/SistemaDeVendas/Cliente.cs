@@ -15,6 +15,6 @@ namespace SistemaDeVendas
         public string Cnpj { get; set; }
         public string Cpf { get; set; }
         public Endereco Enderco { get; set; }
-        public DateTime DataDeNascimento { get; set; }
+        public DateTime DataDeNascimento { get; set; }=DateTime.Now;
     }
 }

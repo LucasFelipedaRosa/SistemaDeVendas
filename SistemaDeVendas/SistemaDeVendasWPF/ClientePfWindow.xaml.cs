@@ -1,4 +1,5 @@
-﻿using SistemaDeVendasWPF.ViewModel;
+﻿using SistemaDeVendas;
+using SistemaDeVendasWPF.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +22,7 @@ namespace SistemaDeVendasWPF
     public partial class ClienteWindow : Window
     {
         public ClienteViewModel ClienteViewModel { get; set; }
+        public Cliente Cliente { get; set; }
 
         public ClienteWindow()
         {
@@ -31,7 +33,7 @@ namespace SistemaDeVendasWPF
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (sender == this.OkBtn)
-            {
+            {    
                 this.ClienteViewModel.Salvar();
             }
             this.Close();
