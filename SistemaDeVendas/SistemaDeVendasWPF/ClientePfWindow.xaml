@@ -22,10 +22,10 @@
         <TextBlock Grid.Row="1">Cpf: </TextBlock>
         <TextBlock Grid.Row="2">Data de nascimento</TextBlock>
         <TextBox Grid.Column="1" x:Name="NomeTxtBox"
-                 Text="{Binding Cliente.Nome}"></TextBox>
+                 Text="{Binding ClientePf.Nome}"></TextBox>
         <TextBox Grid.Column="1" Grid.Row="1" x:Name="CpdTextBox"
-                 Text="{Binding Cliente.Cpf}"></TextBox>
-        <DatePicker SelectedDate="{Binding Cliente.DataDeNascimento}" Grid.Column="1" Grid.Row="2" x:Name="DataDeNascimentoDatePicker"></DatePicker>
+                 Text="{Binding ClientePf.Cpf}"></TextBox>
+        <DatePicker SelectedDate="{Binding ClientePf.DataDeNascimento}" Grid.Column="1" Grid.Row="2" x:Name="DataDeNascimentoDatePicker"></DatePicker>
 
 
 

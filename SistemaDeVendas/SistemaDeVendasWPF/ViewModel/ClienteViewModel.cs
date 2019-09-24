@@ -9,21 +9,21 @@ namespace SistemaDeVendasWPF.ViewModel
 {
     public class ClienteViewModel
     {
-        public SistemaDeVendas.Cliente Cliente { get; set; }
+        public SistemaDeVendas.ClientePf ClientePf { get; set; }
 
 
         ModelVendas context = new ModelVendas();
 
         public ClienteViewModel()
         {
-            this.Cliente = new SistemaDeVendas.Cliente();
+            this.ClientePf = new SistemaDeVendas.ClientePf();           
         }
 
-        
+
 
         public void Salvar()
         {
-            this.context.Clientes.Add(Cliente);
+            this.context.Clientes.Add(ClientePf);
            this.context.SaveChanges();
         }
     }

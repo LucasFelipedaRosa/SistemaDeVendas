@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SistemaDeVendas
 {
-    public class Cliente
+    public class ClientePj : Cliente
     {
-        public int Id { get; set; }
-        public string Nome{ get; set; }
+        public string Cnpj { get; set; }
+        public Endereco Enderco { get; set; }
     }
 }
