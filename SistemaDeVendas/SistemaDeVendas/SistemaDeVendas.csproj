@@ -55,9 +55,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cliente.cs" />
-    <Compile Include="ClientePf.cs" />
-    <Compile Include="ClientePj.cs" />
+    <Compile Include="Migrations\201909251737254_25092019.cs" />
+    <Compile Include="Migrations\201909251737254_25092019.designer.cs">
+      <DependentUpon>201909251737254_25092019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pessoa.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Grade.cs" />
     <Compile Include="Mercadoria.cs" />
@@ -97,6 +99,12 @@
     <EmbeddedResource Include="Migrations\201909241947123_NovaModificacaoDeCLiente.resx">
       <DependentUpon>201909241947123_NovaModificacaoDeCLiente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909251737254_25092019.resx">
+      <DependentUpon>201909251737254_25092019.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Migrations\201909251736570_25\09\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

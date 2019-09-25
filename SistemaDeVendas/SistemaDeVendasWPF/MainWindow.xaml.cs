@@ -25,9 +25,15 @@ namespace SistemaDeVendasWPF
             InitializeComponent();
         }
 
-        private void ClienteMenu_Click(object sender, RoutedEventArgs e)
+        private void CadastrarClienteMenu_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new ClienteWindow();
+            Window window = new CadPFWindow();
+            window.ShowDialog();
+        }
+
+        private void VisualizarClienteMenu_Click(object sender, RoutedEventArgs e)
+        {
+            PessoaWindow window = new PessoaWindow();
             window.ShowDialog();
         }
     }

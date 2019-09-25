@@ -23,9 +23,9 @@ namespace SistemaDeVendas
         public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<Mercadoria> Mercadorias { get; set; }
         public virtual DbSet<Endereco> Enderecos { get; set; }
-        public virtual DbSet<Cliente> Clientes { get; set; }
-        public virtual DbSet<ClientePf> ClientePf { get; set; }
-        public virtual DbSet<ClientePj> ClientePj { get; set; }
+        public virtual DbSet<Pessoa> Pessoas { get; set; }
+        public virtual DbSet<PessoaFisica> PessoaFisicas { get; set; }
+        public virtual DbSet<PessoaJuridica> PessoaJuridicas { get; set; }
     }
 
   

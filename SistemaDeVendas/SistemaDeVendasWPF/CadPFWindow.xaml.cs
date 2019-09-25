@@ -17,17 +17,17 @@ using System.Windows.Shapes;
 namespace SistemaDeVendasWPF
 {
     /// <summary>
-    /// Lógica interna para ClienteWindow.xaml
+    /// Lógica interna para CadPFWindow.xaml
     /// </summary>
-    public partial class ClienteWindow : Window
+    public partial class CadPFWindow : Window
     {
-        public ClienteViewModel ClienteViewModel { get; set; }
-        public Cliente Cliente { get; set; }
+        public PessoaViewModel ClienteViewModel { get; set; }
+        public Pessoa Pessoa { get; set; }
 
-        public ClienteWindow()
+        public CadPFWindow()
         {
             InitializeComponent();
-            this.ClienteViewModel = new ClienteViewModel();
+            this.ClienteViewModel = new PessoaViewModel();
             DataContext = this.ClienteViewModel;
         }
         private void Button_Click(object sender, RoutedEventArgs e)

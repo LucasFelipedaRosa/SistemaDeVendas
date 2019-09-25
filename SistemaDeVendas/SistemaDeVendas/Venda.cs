@@ -12,7 +12,7 @@ namespace SistemaDeVendas
         public int QuantidadeItens { get; set; }
         public IList<Mercadoria> Mercadorias { get; set; }
         public IList<Grade> Grade { get; set; }
-        public Cliente Cliente { get; set; }
+        public Pessoa Pessoa { get; set; }
         public DateTime DataDaVenda { get; set; }
     }
 }

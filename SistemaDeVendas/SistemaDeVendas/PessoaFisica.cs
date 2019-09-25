@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaDeVendas
 {
-    class PessoaFisica : Cliente
+    public class PessoaFisica : Pessoa
     {
         public string Cpf { get; set; }
         public DateTime DataDeNascimento { get; set; } = DateTime.Now;

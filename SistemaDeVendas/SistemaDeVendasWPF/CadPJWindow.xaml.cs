@@ -19,7 +19,7 @@ namespace SistemaDeVendasWPF
     /// </summary>
     public partial class ClientePjWindow : Window
     {
-        public ClientePjWindow ClientePjWindow { get; set; }
+       /* public ClientePjWindow ClientePjWindow { get; set; }
 
         public ClientePjWindow()
         {
@@ -27,7 +27,7 @@ namespace SistemaDeVendasWPF
             this.ClientePjWindow = new ClientePjWindow();
             DataContext = this.ClientePjWindow;
         }
-
+        */
         
     }
 }
