@@ -19,15 +19,23 @@ namespace SistemaDeVendasWPF
     /// </summary>
     public partial class ClientePjWindow : Window
     {
-       /* public ClientePjWindow ClientePjWindow { get; set; }
+        public ClientePjWindow ClientePjWindows { get; set; }
 
         public ClientePjWindow()
         {
             InitializeComponent();
-            this.ClientePjWindow = new ClientePjWindow();
-            DataContext = this.ClientePjWindow;
+            this.ClientePjWindows = new ClientePjWindow();
+            DataContext = this.ClientePjWindows;
         }
-        */
-        
+        private void Button_Click2(object sender, RoutedEventArgs e)
+        {
+            if (sender == this.CancelarBtn2)
+            {
+                this.ClientePjWindows.Salvar();
+            }
+            this.Close();
+        }
+
+
     }
 }

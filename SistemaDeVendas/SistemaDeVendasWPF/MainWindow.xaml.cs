@@ -42,5 +42,14 @@ namespace SistemaDeVendasWPF
             MercadoriaWindow window = new MercadoriaWindow();
             window.ShowDialog();
         }
+
+        private void CadastrarClienteMenu2_Click(object sender, RoutedEventArgs e)
+        {
+            ClientePjWindow window = new ClientePjWindow();
+            window.ShowDialog();
+           
+        }
+
+        
     }
 }

@@ -26,6 +26,11 @@
         <TextBox Grid.Column="1" Grid.Row="1" x:Name="CpdTextBox"
                  Text="{Binding PessoaJuridica.Cnpj}"></TextBox>
         
+        <Button  Margin="170,335,126,10"
+                     x:Name="CancelarBtn2"
+                     Click="Button_Click2"
+                Width="100" Grid.Row="3">Cancelar</Button>
+
 
     </Grid>
 </Window>
