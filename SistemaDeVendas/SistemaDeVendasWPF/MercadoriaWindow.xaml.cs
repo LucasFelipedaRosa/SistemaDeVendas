@@ -21,7 +21,6 @@ namespace SistemaDeVendasWPF
     /// </summary>
     public partial class MercadoriaWindow : Window
     {
-        public Mercadoria Mercadoria { get; set; }
         public MercadoriaViewModel MercadoriaViewModel { get; set; }
         public MercadoriaWindow()
         {
@@ -36,14 +35,6 @@ namespace SistemaDeVendasWPF
         {
             if (sender == this.OkBtn)
             {
-                if (CadarsoCheckBox.IsChecked == true)
-                {
-                    Mercadoria.Cadarso = true;
-                }
-                else
-                {
-                    Mercadoria.Cadarso = false;
-                }
                 this.MercadoriaViewModel.Salvar();
             }
             this.Close();

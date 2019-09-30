@@ -11,16 +11,16 @@ namespace SistemaDeVendasWPF.ViewModel
     {
         public SistemaDeVendas.PessoaFisica PessoaFisica { get; set; }
         public IList<Pessoa> Pessoas { get; set; }
-        = DAO.PessoasDAO.RetornarPessoas();
 
         public Pessoa PessoaSelecionada { get; set; }
 
         public SistemaDeVendas.Pessoa Pessoa { get; set; }
 
-        ModelVendas context = new ModelVendas();
+        protected ModelVendas context { get; set; } = new ModelVendas();
 
         public PessoaViewModel()
         {
+            this.Pessoas = context.Pessoas.ToList();
             this.Pessoa = new SistemaDeVendas.Pessoa();
             this.PessoaFisica = new SistemaDeVendas.PessoaFisica();
             PessoaSelecionada = Pessoas.FirstOrDefault();
@@ -33,27 +33,8 @@ namespace SistemaDeVendasWPF.ViewModel
         }
         public void Editar(Pessoa p)
         {
-            if (p is PessoaJuridica)
-            {
-                PessoaJuridica pessoaJuridica = (from pss in context.PessoaJuridicas
-                                                 where pss.Id == p.Id
-                                                 select pss).FirstOrDefault();
-                if (pessoaJuridica != null)
-                {
-                    pessoaJuridica.Nome = p.Nome;
-                    this.context.SaveChanges();
-                }
-            } else if (p is PessoaFisica)
-            {               
-                PessoaFisica pessoaFisica = (from pss in context.PessoaFisicas
-                                             where pss.Id == p.Id
-                                             select pss).FirstOrDefault();
-                if (pessoaFisica != null)
-                {
-                    pessoaFisica.Nome = p.Nome;
-                    this.context.SaveChanges();
-                }
-            }
+            this.context.SaveChanges();
+
         }
         public void Excluir(Pessoa p)
         {
