@@ -36,5 +36,11 @@ namespace SistemaDeVendasWPF
             PessoaWindow window = new PessoaWindow();
             window.ShowDialog();
         }
+
+        private void CadastrarMercadoriaMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MercadoriaWindow window = new MercadoriaWindow();
+            window.ShowDialog();
+        }
     }
 }

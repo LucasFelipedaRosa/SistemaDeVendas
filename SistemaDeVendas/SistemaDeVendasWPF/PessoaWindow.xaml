@@ -33,7 +33,7 @@
             Grid.Row="4" Grid.ColumnSpan="2"
                     Orientation="Horizontal">
             <Button  Width="100" Margin="0,0,50,0"
-                     x:Name="OkBtn" Click="Button_Click">Ok
+                     x:Name="OkBtn" Click="Button_Click">Editar
             </Button>
             <Button  Margin="50,0,0,0"
                      x:Name="CancelarBtn"

@@ -9,6 +9,7 @@ namespace SistemaDeVendas
     public class Mercadoria
     {
         public int id { get; set; }
+        public string Modelo { get; set; }
         public Boolean Cadarso { get; set; }
         public string Material { get; set; }
         public string Cor { get; set; }

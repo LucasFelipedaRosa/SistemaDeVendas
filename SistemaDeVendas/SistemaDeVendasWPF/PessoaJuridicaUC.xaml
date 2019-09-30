@@ -16,7 +16,9 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="1" Grid.Column="0">CNPJ</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Pessoa.Cnpj}"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="0">Nome</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Pessoa.Nome}"></TextBox>
+        <TextBlock Grid.Row="2" Grid.Column="0">CNPJ</TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Pessoa.Cnpj}"></TextBox>
     </Grid>
 </UserControl>
