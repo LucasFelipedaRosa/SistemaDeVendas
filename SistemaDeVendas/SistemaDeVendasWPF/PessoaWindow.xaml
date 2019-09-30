@@ -11,21 +11,39 @@
             <RowDefinition Height="30"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition ></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="2">Nome:</TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
         <DataGrid Grid.Row="1"  Grid.ColumnSpan="2" 
                   x:Name="PessoasDataGrid" ItemsSource="{Binding Pessoas}"
                   SelectionChanged="PessoasDataGrid_SelectionChanged"
                   SelectedItem="{Binding PessoaSelecionada}"
                   ></DataGrid>
-        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" x:Name="PessoaContent">
+        
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" x:Name="PessoaContent">
 
         </StackPanel>
+
+
+        <StackPanel Margin="10" 
+            HorizontalAlignment="Center"
+            Grid.Row="4" Grid.ColumnSpan="2"
+                    Orientation="Horizontal">
+            <Button  Width="100" Margin="0,0,50,0"
+                     x:Name="OkBtn" Click="Button_Click">Ok
+            </Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="CancelarBtn"
+                     Click="Button_Click"
+                Width="100">Cancelar</Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="Excluir_btn"
+                     Click="Button_Click"
+                Width="100">Excluir</Button>
+        </StackPanel>
+
     </Grid>
 </Window>

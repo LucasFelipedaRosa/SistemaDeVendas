@@ -14,12 +14,17 @@ namespace SistemaDeVendasWPF.DAO
 
         // public static IList<Pessoa> ListaDePessoas2 { get; private set; }
 
+        public SistemaDeVendas.Pessoa Pessoa { get; set; }
+
         public static IList<Pessoa> RetornarPessoas()
         {
             ModelVendas context = new ModelVendas();
             ListaDePessoas = context.Pessoas.ToList();
             return ListaDePessoas.ToList();
         }
+
+       
+
         /*
         public static Pessoa RetornarPessoas2(ModelVendas context)
         {

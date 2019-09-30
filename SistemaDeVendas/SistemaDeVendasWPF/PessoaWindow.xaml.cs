@@ -16,19 +16,20 @@ using System.Windows.Shapes;
 
 namespace SistemaDeVendasWPF
 {
+
     /// <summary>
-    /// Lógica interna para PessoaWindow.xaml
+    /// Lógica interna para PessoaWindow.xam
     /// </summary>
     public partial class PessoaWindow : Window
     {
         public PessoaViewModel vmPessoa { get; set; }
+        public Pessoa PessoaSelecionada { get; set; }
+        public SistemaDeVendas.Pessoa Pessoa { get; set; }
         public PessoaWindow()
         {
             vmPessoa = new PessoaViewModel();
             InitializeComponent();
             this.DataContext = vmPessoa;
-
-
         }
 
         private void PessoasDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -41,6 +42,19 @@ namespace SistemaDeVendasWPF
             }
             PessoaContent.Children.Add(page);
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender == this.OkBtn)
+            {
+                this.vmPessoa.Editar(vmPessoa.PessoaSelecionada);
+            }
+            else if (sender == this.Excluir_btn)
+            {
+                this.vmPessoa.Excluir(vmPessoa.PessoaSelecionada);
+            }
+            this.Close();
         }
 
     }
@@ -65,6 +79,7 @@ namespace SistemaDeVendasWPF
             }
             return null;
         }
+        
     }
 }
 

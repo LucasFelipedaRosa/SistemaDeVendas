@@ -5,9 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SistemaDeVendasWPF"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
+             d:DesignHeight="114" d:DesignWidth="800">
+    <Grid Height="174" VerticalAlignment="Top">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -16,9 +17,11 @@
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.Column="0">Nascimento:</TextBlock>
-        <DatePicker Grid.Row="0" Grid.Column="1" SelectedDate="{Binding Pessoa.Nascimento}"></DatePicker>
-        <TextBlock Grid.Row="1" Grid.Column="0">CPF:</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Pessoa.CPF}"></TextBox>
+        <TextBlock Grid.Row="0" Grid.Column="0">Nome:</TextBlock>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Pessoa.Nome}"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="0">Nascimento:</TextBlock>
+        <DatePicker Grid.Row="1" Grid.Column="1" SelectedDate="{Binding Pessoa.DataDeNascimento}"></DatePicker>
+        <TextBlock Grid.Row="2" Grid.Column="0">CPF:</TextBlock>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Pessoa.Cpf}"></TextBox>
     </Grid>
 </UserControl>

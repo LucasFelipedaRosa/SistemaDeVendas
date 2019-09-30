@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SistemaDeVendasWPF"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="69" d:DesignWidth="800">
     <Grid >
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
@@ -17,6 +17,6 @@
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="1" Grid.Column="0">CNPJ</TextBlock>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Pessoa.CNPJ}"></TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Pessoa.Cnpj}"></TextBox>
     </Grid>
 </UserControl>
