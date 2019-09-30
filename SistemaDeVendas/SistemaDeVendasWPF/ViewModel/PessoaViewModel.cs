@@ -34,7 +34,6 @@ namespace SistemaDeVendasWPF.ViewModel
         public void Editar(Pessoa p)
         {
             this.context.SaveChanges();
-
         }
         public void Excluir(Pessoa p)
         {
