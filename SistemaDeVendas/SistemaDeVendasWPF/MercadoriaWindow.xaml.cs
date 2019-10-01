@@ -21,24 +21,46 @@ namespace SistemaDeVendasWPF
     /// </summary>
     public partial class MercadoriaWindow : Window
     {
-        public MercadoriaViewModel MercadoriaViewModel { get; set; }
+        public MercadoriaViewModel vmMercadoria { get; set; }
         public MercadoriaWindow()
         {
+            vmMercadoria = new MercadoriaViewModel();
             InitializeComponent();
-            this.MercadoriaViewModel = new MercadoriaViewModel();
-            DataContext = this.MercadoriaViewModel;
+            this.DataContext = vmMercadoria;
         }
 
-
+        private void MercadoriasDataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Mercadoria m = vmMercadoria.MercadoriaSelecionada;
+            UserControl page = MercadoriaViewFactory.VisualizarMercadoria(m);
+            while (MercadoriaContent.Children.Count > 0)
+            {
+                MercadoriaContent.Children.RemoveAt(0);
+            }
+            MercadoriaContent.Children.Add(page);
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (sender == this.OkBtn)
             {
-                this.MercadoriaViewModel.Salvar();
+                this.vmMercadoria.Editar(vmMercadoria.MercadoriaSelecionada);
+            }
+            else if (sender == this.Excluirbtn)
+            {
+                this.vmMercadoria.Excluir(vmMercadoria.MercadoriaSelecionada);
             }
             this.Close();
         }
+        public class MercadoriaViewFactory
+        {
+            static public UserControl VisualizarMercadoria(Mercadoria mercadoria)
+            {
+                var pg = new MercadoriaUC();
+                pg.Mercadoria = (Mercadoria)mercadoria;
+                return pg;
+            }
+
+        }
     }
-    
 }

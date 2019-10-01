@@ -7,13 +7,13 @@ namespace SistemaDeVendas.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.3.0")]
-    public sealed partial class sala30 : IMigrationMetadata
+    public sealed partial class AlteracoesNasDependenciasDeMercadoriaEGrade : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(sala30));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AlteracoesNasDependenciasDeMercadoriaEGrade));
         
         string IMigrationMetadata.Id
         {
-            get { return "201909302210440_sala30"; }
+            get { return "201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade"; }
         }
         
         string IMigrationMetadata.Source

@@ -6,52 +6,44 @@
         xmlns:local="clr-namespace:SistemaDeVendasWPF"
         mc:Ignorable="d"
         Title="MercadoriaWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="MainPanel">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <TextBlock>Modelo:</TextBlock>
-        <TextBlock Grid.Row="1">Matéria:</TextBlock>
-        <TextBlock Grid.Row="2">Cor:</TextBlock>
-        <TextBlock Grid.Row="3">Preço:</TextBlock>
-        <TextBlock Grid.Row="4">Cadarso:</TextBlock>
-        <TextBlock Grid.Row="5">Imagem:</TextBlock>
-        <TextBox Grid.Column="1" x:Name="ModeloTxtBox"
-                 Text="{Binding Mercadoria.Modelo}"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="1" x:Name="MateriaTextBox"
-                 Text="{Binding Mercadoria.Materia}"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="2" x:Name="CorTextBox"
-                 Text="{Binding Mercadoria.Cor}"></TextBox>
-        <TextBox Grid.Column="1" Grid.Row="3" x:Name="PrecoTextBox"
-                 Text="{Binding Mercadoria.Preco}"></TextBox>
-        <CheckBox Grid.Column="1" Grid.Row="4" IsChecked="{Binding Mercadoria.Cadarso}" 
-            x:Name="CadarsoCheckBox"  HorizontalAlignment="Right" Width="396"/>
-        <TextBox Grid.Column="1" Grid.Row="5" x:Name="ImagemTextBox"
-                 Text="{Binding Mercadoria.Imagem}"></TextBox>
+        <DataGrid Grid.Row="1"  Grid.ColumnSpan="2" 
+                  x:Name="MercadoriasDataGrid" ItemsSource="{Binding Mercadorias}"
+                  SelectionChanged="MercadoriasDataGrid_SelectionChanged"
+                  SelectedItem="{Binding MercadoriaSelecionada}"
+                  ></DataGrid>
+        
+
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" x:Name="MercadoriaContent">
+
+        </StackPanel>
 
         <StackPanel Margin="10" 
             HorizontalAlignment="Center"
-            Grid.Row="7" Grid.ColumnSpan="2"
+            Grid.Row="4" Grid.ColumnSpan="2"
                     Orientation="Horizontal">
             <Button  Width="100" Margin="0,0,50,0"
-                     x:Name="OkBtn" Click="Button_Click">Ok
+                     x:Name="OkBtn" Click="Button_Click">Editar
             </Button>
             <Button  Margin="50,0,0,0"
                      x:Name="CancelarBtn"
                      Click="Button_Click"
                 Width="100">Cancelar</Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="Excluirbtn"
+                     Click="Button_Click"
+                Width="100">Excluir</Button>
         </StackPanel>
+
     </Grid>
-    
 </Window>

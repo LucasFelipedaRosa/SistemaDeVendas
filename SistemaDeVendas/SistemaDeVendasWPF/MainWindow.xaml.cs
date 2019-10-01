@@ -39,7 +39,7 @@ namespace SistemaDeVendasWPF
 
         private void CadastrarMercadoriaMenu_Click(object sender, RoutedEventArgs e)
         {
-            MercadoriaWindow window = new MercadoriaWindow();
+            CadMercadoriaWindow window = new CadMercadoriaWindow();
             window.ShowDialog();
         }
 
@@ -50,6 +50,10 @@ namespace SistemaDeVendasWPF
            
         }
 
-        
+        private void VisualizarMercadoriaMenu_Click(object sender, RoutedEventArgs e)
+        {
+            MercadoriaWindow window = new MercadoriaWindow();
+            window.ShowDialog();
+        }
     }
 }

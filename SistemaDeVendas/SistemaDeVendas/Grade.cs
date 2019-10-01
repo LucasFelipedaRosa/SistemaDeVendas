@@ -9,7 +9,6 @@ namespace SistemaDeVendas
     public class Grade
     {
         public int Id { get; set; }
-        public IList<Mercadoria> Mercadoria { get; set; }
         public int Quantidade { get; set; }
     }
 }

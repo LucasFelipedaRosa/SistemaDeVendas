@@ -31,7 +31,7 @@ namespace SistemaDeVendasWPF
         {
             if (sender == this.CancelarBtn2)
             {
-                this.ClientePjWindows.Salvar();
+                // this.ClientePjWindows.Salvar();
             }
             this.Close();
         }

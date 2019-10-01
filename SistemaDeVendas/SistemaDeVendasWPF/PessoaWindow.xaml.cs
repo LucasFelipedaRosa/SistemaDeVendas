@@ -23,8 +23,6 @@ namespace SistemaDeVendasWPF
     public partial class PessoaWindow : Window
     {
         public PessoaViewModel vmPessoa { get; set; }
-        //public Pessoa PessoaSelecionada { get; set; }
-        //public SistemaDeVendas.Pessoa Pessoa { get; set; }
         public PessoaWindow()
         {
             vmPessoa = new PessoaViewModel();

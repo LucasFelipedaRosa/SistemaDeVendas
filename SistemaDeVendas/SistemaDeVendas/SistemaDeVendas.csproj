@@ -59,9 +59,9 @@
     <Compile Include="Migrations\201909251737254_25092019.designer.cs">
       <DependentUpon>201909251737254_25092019.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201909302210440_sala30.cs" />
-    <Compile Include="Migrations\201909302210440_sala30.designer.cs">
-      <DependentUpon>201909302210440_sala30.cs</DependentUpon>
+    <Compile Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs" />
+    <Compile Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.designer.cs">
+      <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
     </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="Endereco.cs" />
@@ -96,18 +96,23 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909191904059_cricao de entidades e coneccao com o banco.resx">
       <DependentUpon>201909191904059_cricao de entidades e coneccao com o banco.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909231831076_ModificacaoNaClasseCLiente.resx">
       <DependentUpon>201909231831076_ModificacaoNaClasseCLiente.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909241947123_NovaModificacaoDeCLiente.resx">
       <DependentUpon>201909241947123_NovaModificacaoDeCLiente.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909251737254_25092019.resx">
       <DependentUpon>201909251737254_25092019.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201909302210440_sala30.resx">
-      <DependentUpon>201909302210440_sala30.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.resx">
+      <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

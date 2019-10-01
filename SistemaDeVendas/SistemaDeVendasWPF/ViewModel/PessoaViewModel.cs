@@ -37,14 +37,9 @@ namespace SistemaDeVendasWPF.ViewModel
         }
         public void Excluir(Pessoa p)
         {
-            Pessoa pessoa = (from pss in context.Pessoas
-                                         where pss.Id == p.Id
-                                         select pss).FirstOrDefault();
-            if (Pessoa != null)
-            {
-                context.Pessoas.Remove(pessoa);
+                context.Pessoas.Remove(p);
                 context.SaveChanges();
-            }
+           
         }
     }
 }
