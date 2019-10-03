@@ -55,5 +55,11 @@ namespace SistemaDeVendasWPF
             MercadoriaWindow window = new MercadoriaWindow();
             window.ShowDialog();
         }
+
+        private void CadastrarGradeMenu_Click(object sender, RoutedEventArgs e)
+        {
+            CadGradeWindow window = new CadGradeWindow();
+            window.ShowDialog();
+        }
     }
 }

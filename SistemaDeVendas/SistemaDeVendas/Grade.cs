@@ -10,5 +10,6 @@ namespace SistemaDeVendas
     {
         public int Id { get; set; }
         public int Quantidade { get; set; }
+        public string Tamanho { get; set; }
     }
 }

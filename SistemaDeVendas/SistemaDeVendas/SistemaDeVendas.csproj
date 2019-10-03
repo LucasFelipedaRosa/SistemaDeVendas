@@ -63,6 +63,22 @@
     <Compile Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.designer.cs">
       <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910021744566_Casa02102019.cs" />
+    <Compile Include="Migrations\201910021744566_Casa02102019.designer.cs">
+      <DependentUpon>201910021744566_Casa02102019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910031714074_Grade.cs" />
+    <Compile Include="Migrations\201910031714074_Grade.designer.cs">
+      <DependentUpon>201910031714074_Grade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910031721571_opa.cs" />
+    <Compile Include="Migrations\201910031721571_opa.designer.cs">
+      <DependentUpon>201910031721571_opa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910031723120_opaa.cs" />
+    <Compile Include="Migrations\201910031723120_opaa.designer.cs">
+      <DependentUpon>201910031723120_opaa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Grade.cs" />
@@ -113,6 +129,18 @@
     <EmbeddedResource Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.resx">
       <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910021744566_Casa02102019.resx">
+      <DependentUpon>201910021744566_Casa02102019.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910031714074_Grade.resx">
+      <DependentUpon>201910031714074_Grade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910031721571_opa.resx">
+      <DependentUpon>201910031721571_opa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910031723120_opaa.resx">
+      <DependentUpon>201910031723120_opaa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

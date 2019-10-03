@@ -67,12 +67,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CadGradeWindow.xaml.cs">
+      <DependentUpon>CadGradeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CadPJWindow.xaml.cs">
       <DependentUpon>CadPJWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="DAO\PessoasDAO.cs" />
     <Compile Include="CadMercadoriaWindow.xaml.cs">
       <DependentUpon>CadMercadoriaWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GradeUC.xaml.cs">
+      <DependentUpon>GradeUC.xaml</DependentUpon>
     </Compile>
     <Compile Include="MercadoriaUC.xaml.cs">
       <DependentUpon>MercadoriaUC.xaml</DependentUpon>
@@ -99,13 +105,22 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\GradeViewModel.cs" />
     <Compile Include="ViewModel\MercadoriaViewModel.cs" />
     <Compile Include="ViewModel\PessoaViewModel.cs" />
+    <Page Include="CadGradeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadPFWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CadPJWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GradeUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

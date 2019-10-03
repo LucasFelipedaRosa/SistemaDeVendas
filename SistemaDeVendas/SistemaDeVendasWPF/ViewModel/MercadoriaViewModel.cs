@@ -19,10 +19,9 @@ namespace SistemaDeVendasWPF.ViewModel
 
         public MercadoriaViewModel()
         {
-            this.Mercadoria = new SistemaDeVendas.Mercadoria();
-            this.Mercadorias = context.Mercadorias.ToList();
-            this.Mercadoria = new SistemaDeVendas.Mercadoria();
-            MercadoriaSelecionada = Mercadorias.FirstOrDefault();
+           this.Mercadoria = new SistemaDeVendas.Mercadoria();
+           this.Mercadorias = context.Mercadorias.ToList();
+           MercadoriaSelecionada = Mercadorias.FirstOrDefault();
         }
 
         public void Salvar()
