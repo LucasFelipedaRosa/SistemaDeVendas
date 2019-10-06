@@ -79,6 +79,10 @@
     <Compile Include="Migrations\201910031723120_opaa.designer.cs">
       <DependentUpon>201910031723120_opaa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910042012541_TesteLazy.cs" />
+    <Compile Include="Migrations\201910042012541_TesteLazy.designer.cs">
+      <DependentUpon>201910042012541_TesteLazy.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="Endereco.cs" />
     <Compile Include="Grade.cs" />
@@ -141,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910031723120_opaa.resx">
       <DependentUpon>201910031723120_opaa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910042012541_TesteLazy.resx">
+      <DependentUpon>201910042012541_TesteLazy.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

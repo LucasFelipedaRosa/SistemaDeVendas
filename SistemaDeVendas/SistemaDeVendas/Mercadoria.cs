@@ -15,7 +15,7 @@ namespace SistemaDeVendas
         public string Material { get; set; }
         public string Cor { get; set; }
         public decimal Preco { get; set; }
-        public string Imagem { get; set; }
-        public IList<Grade> Grade { get; set; }
+        public string Imagem { get; set; }       
+        public virtual IList<Grade> Grade { get; set; }
     }
 }

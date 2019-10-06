@@ -1,0 +1,49 @@
+﻿<Window x:Class="SistemaDeVendasWPF.GradeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemaDeVendasWPF"
+        mc:Ignorable="d"
+        Title="GradeWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <DataGrid Grid.Row="1"  Grid.ColumnSpan="2" 
+                  x:Name="MercadoriasDataGrid" ItemsSource="{Binding Mercadorias}"
+                  SelectionChanged="MercadoriasDataGrid_SelectionChanged"
+                  SelectedItem="{Binding MercadoriaSelecionada}"
+        ></DataGrid>
+        <StackPanel Grid.Row="3" Grid.ColumnSpan="2" x:Name="MercadoriaContent">
+
+        </StackPanel>
+        <StackPanel Margin="10" 
+            HorizontalAlignment="Center"
+            Grid.Row="5" Grid.ColumnSpan="2"
+                    Orientation="Horizontal">
+            <Button  Width="100" Margin="0,0,50,0"
+                     x:Name="OkBtn" Click="Button_Click">Editar
+            </Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="CancelarBtn"
+                     Click="Button_Click"
+                Width="100">Cancelar</Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="Excluir_btn"
+                     Click="Button_Click"
+                Width="100">Excluir</Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

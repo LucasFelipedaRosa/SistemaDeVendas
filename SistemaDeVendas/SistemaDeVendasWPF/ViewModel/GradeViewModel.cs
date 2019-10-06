@@ -15,14 +15,18 @@ namespace SistemaDeVendasWPF.ViewModel
 
         public IList<Mercadoria> Mercadorias { get; set; }
 
-        public IList<Grade> Grades {get;set;}
+        public IList<Grade> Grades { get; set; }
+
+        public IQueryable Result { get; set; }
+
+        public IList<Grade> GradesSelecionadas { get; set; }
 
         public SistemaDeVendas.Mercadoria Mercadoria { get; set; }
 
         public SistemaDeVendas.Grade Grade { get; set; }
 
         protected ModelVendas context { get; set; } = new ModelVendas();
-     
+
 
         public GradeViewModel()
         {
@@ -31,12 +35,15 @@ namespace SistemaDeVendasWPF.ViewModel
             this.Grade = new SistemaDeVendas.Grade();
             this.Mercadorias = context.Mercadorias.ToList();
             MercadoriaSelecionada = Mercadorias.FirstOrDefault();
+            GradesSelecionadas = MercadoriaSelecionada.Grade;
         }
+
         public void Salvar()
         {
             Grades.Add(Grade);
             this.MercadoriaSelecionada.Grade = Grades;
             this.context.SaveChanges();
         }
+
     }
 }
