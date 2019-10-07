@@ -21,7 +21,6 @@ namespace SistemaDeVendasWPF
     /// </summary>
     public partial class CadGradeWindow : Window
     {
-        //GradeViewModel vmGrade { get; set; }
         public GradeViewModel GradeViewModel { get; set; }
         public CadGradeWindow()
         {           
@@ -34,6 +33,7 @@ namespace SistemaDeVendasWPF
         {
 
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             if (sender == this.OkBtn)

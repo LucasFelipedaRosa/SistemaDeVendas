@@ -77,8 +77,17 @@
     <Compile Include="CadMercadoriaWindow.xaml.cs">
       <DependentUpon>CadMercadoriaWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GradeAltUC.xaml.cs">
+      <DependentUpon>GradeAltUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GradeUC.xaml.cs">
       <DependentUpon>GradeUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GradeViewUC.xaml.cs">
+      <DependentUpon>GradeViewUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GradeWindow.xaml.cs">
+      <DependentUpon>GradeWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="MercadoriaUC.xaml.cs">
       <DependentUpon>MercadoriaUC.xaml</DependentUpon>
@@ -106,6 +115,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\GradeViewModel.cs" />
+    <Compile Include="ViewModel\MercadoriaGradeViewModel.cs" />
     <Compile Include="ViewModel\MercadoriaViewModel.cs" />
     <Compile Include="ViewModel\PessoaViewModel.cs" />
     <Page Include="CadGradeWindow.xaml">
@@ -120,7 +130,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GradeAltUC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="GradeUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GradeViewUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GradeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

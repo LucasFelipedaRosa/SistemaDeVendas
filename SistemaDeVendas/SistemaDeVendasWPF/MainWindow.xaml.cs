@@ -61,5 +61,12 @@ namespace SistemaDeVendasWPF
             CadGradeWindow window = new CadGradeWindow();
             window.ShowDialog();
         }
+
+        private void VisualizarGradeMenu_Click(object sender, RoutedEventArgs e)
+        {
+            GradeWindow window = new GradeWindow();
+            window.ShowDialog();
+
+        }
     }
 }
