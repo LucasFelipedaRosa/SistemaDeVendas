@@ -10,6 +10,7 @@ namespace SistemaDeVendasWPF.ViewModel
     public class PessoaViewModel
     {
         public SistemaDeVendas.PessoaFisica PessoaFisica { get; set; }
+        public SistemaDeVendas.PessoaJuridica PessoaJuridica { get; set; }
         public IList<Pessoa> Pessoas { get; set; }
 
         public Pessoa PessoaSelecionada { get; set; }
@@ -23,13 +24,15 @@ namespace SistemaDeVendasWPF.ViewModel
             this.Pessoas = context.Pessoas.ToList();
             this.Pessoa = new SistemaDeVendas.Pessoa();
             this.PessoaFisica = new SistemaDeVendas.PessoaFisica();
+            this.PessoaJuridica = new SistemaDeVendas.PessoaJuridica();
             PessoaSelecionada = Pessoas.FirstOrDefault();
         }
 
         public void Salvar()
         {
             this.context.Pessoas.Add(PessoaFisica);
-           this.context.SaveChanges();
+            this.context.Pessoas.Add(PessoaJuridica);
+            this.context.SaveChanges();
         }
         public void Editar(Pessoa p)
         {

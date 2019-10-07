@@ -45,7 +45,7 @@ namespace SistemaDeVendasWPF
 
         private void CadastrarClienteMenu2_Click(object sender, RoutedEventArgs e)
         {
-            ClientePjWindow window = new ClientePjWindow();
+            Window window = new CadPJWindow();
             window.ShowDialog();
            
         }

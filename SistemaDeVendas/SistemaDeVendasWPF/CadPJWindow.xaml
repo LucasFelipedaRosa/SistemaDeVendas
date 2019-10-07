@@ -25,12 +25,19 @@
                  Text="{Binding PessoaJuridica.Nome}"></TextBox>
         <TextBox Grid.Column="1" Grid.Row="1" x:Name="CpdTextBox"
                  Text="{Binding PessoaJuridica.Cnpj}"></TextBox>
-        
-        <Button  Margin="170,335,126,10"
-                     x:Name="CancelarBtn2"
-                     Click="Button_Click2"
-                Width="100" Grid.Row="3">Cancelar</Button>
 
+        <StackPanel Margin="10" 
+            HorizontalAlignment="Center"
+            Grid.Row="4" Grid.ColumnSpan="2"
+                    Orientation="Horizontal">
+            <Button  Width="100" Margin="0,0,50,0"
+                     x:Name="OkBtn2" Click="Button_Click">Ok
+            </Button>
+            <Button  Margin="50,0,0,0"
+                     x:Name="CancelarBtn"
+                     Click="Button_Click"
+                Width="100">Cancelar</Button>
+        </StackPanel>
 
     </Grid>
 </Window>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SistemaDeVendas;
+using SistemaDeVendasWPF.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,21 +19,31 @@ namespace SistemaDeVendasWPF
     /// <summary>
     /// Lógica interna para ClientePjWindow.xaml
     /// </summary>
-    public partial class ClientePjWindow : Window
+    public partial class CadPJWindow : Window
     {
-        public ClientePjWindow ClientePjWindows { get; set; }
+       
+        public PessoaViewModel ClienteViewModel { get; set; }
+        public Pessoa Pessoa { get; set; }
 
-        public ClientePjWindow()
+
+
+        public CadPJWindow()
         {
             InitializeComponent();
-            this.ClientePjWindows = new ClientePjWindow();
-            DataContext = this.ClientePjWindows;
+            this.ClienteViewModel = new PessoaViewModel();
+            DataContext = this.ClienteViewModel;
         }
-        private void Button_Click2(object sender, RoutedEventArgs e)
+
+        private void InitializeComponent()
         {
-            if (sender == this.CancelarBtn2)
+            throw new NotImplementedException();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (sender == this.OkBtn2)
             {
-                // this.ClientePjWindows.Salvar();
+                this.ClienteViewModel.Salvar();
             }
             this.Close();
         }
