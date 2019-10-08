@@ -34,14 +34,10 @@ namespace SistemaDeVendasWPF
             DataContext = this.ClienteViewModel;
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
+       
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (sender == this.OkBtn2)
+            if (sender == this.OkBtn)
             {
                 this.ClienteViewModel.Salvar();
             }
