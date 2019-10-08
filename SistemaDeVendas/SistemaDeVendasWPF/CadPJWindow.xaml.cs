@@ -26,7 +26,7 @@ namespace SistemaDeVendasWPF
         public Pessoa Pessoa { get; set; }
 
 
-
+        /*
         public CadPJWindow()
         {
             InitializeComponent();
@@ -48,6 +48,6 @@ namespace SistemaDeVendasWPF
             this.Close();
         }
 
-
+        */
     }
 }

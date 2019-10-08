@@ -20,9 +20,6 @@
                 <MenuItem Header="Mercadoria"    
                           x:Name="CadastrarMercadoriaMenu"
                           Click="CadastrarMercadoriaMenu_Click"></MenuItem>
-                <MenuItem Header="Cliente Pj"    
-                          x:Name="CadastrarClienteMenu2"
-                          Click="CadastrarClienteMenu2_Click"></MenuItem>
                 <MenuItem Header="Grade"    
                           x:Name="CadastrarGradeMenu"
                           Click="CadastrarGradeMenu_Click"></MenuItem>

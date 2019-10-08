@@ -63,10 +63,6 @@
     <Compile Include="Migrations\201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.designer.cs">
       <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201910021744566_Casa02102019.cs" />
-    <Compile Include="Migrations\201910021744566_Casa02102019.designer.cs">
-      <DependentUpon>201910021744566_Casa02102019.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\201910031714074_Grade.cs" />
     <Compile Include="Migrations\201910031714074_Grade.designer.cs">
       <DependentUpon>201910031714074_Grade.cs</DependentUpon>
@@ -82,6 +78,10 @@
     <Compile Include="Migrations\201910042012541_TesteLazy.cs" />
     <Compile Include="Migrations\201910042012541_TesteLazy.designer.cs">
       <DependentUpon>201910042012541_TesteLazy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910072217299_Grade.Tamanho.cs" />
+    <Compile Include="Migrations\201910072217299_Grade.Tamanho.designer.cs">
+      <DependentUpon>201910072217299_Grade.Tamanho.cs</DependentUpon>
     </Compile>
     <Compile Include="Pessoa.cs" />
     <Compile Include="Endereco.cs" />
@@ -135,9 +135,6 @@
       <DependentUpon>201909302346086_AlteracoesNasDependenciasDeMercadoriaEGrade.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201910021744566_Casa02102019.resx">
-      <DependentUpon>201910021744566_Casa02102019.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910031714074_Grade.resx">
       <DependentUpon>201910031714074_Grade.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910042012541_TesteLazy.resx">
       <DependentUpon>201910042012541_TesteLazy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910072217299_Grade.Tamanho.resx">
+      <DependentUpon>201910072217299_Grade.Tamanho.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

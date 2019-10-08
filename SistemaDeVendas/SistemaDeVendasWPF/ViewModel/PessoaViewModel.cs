@@ -30,9 +30,11 @@ namespace SistemaDeVendasWPF.ViewModel
 
         public void Salvar()
         {
-            this.context.Pessoas.Add(PessoaFisica);
-            this.context.Pessoas.Add(PessoaJuridica);
-            this.context.SaveChanges();
+          
+                this.context.Pessoas.Add(PessoaFisica);
+                this.context.Pessoas.Add(PessoaJuridica);
+                this.context.SaveChanges();
+
         }
         public void Editar(Pessoa p)
         {

@@ -24,7 +24,7 @@ namespace SistemaDeVendasWPF
     {
         public MercadoriaGradeViewModel MercadoriaGradeViewModel { get; set; }
         public Grade GradeSelecionada { get; set; }
-        public Grade grade { get; set; }
+        public Grade Grade { get; set; }
         public GradeAltUC()
         {
             MercadoriaGradeViewModel = new MercadoriaGradeViewModel();

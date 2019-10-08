@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SistemaDeVendasWPF.ViewModel
 {
@@ -20,14 +21,24 @@ namespace SistemaDeVendasWPF.ViewModel
         public MercadoriaViewModel()
         {
            this.Mercadoria = new SistemaDeVendas.Mercadoria();
-           this.Mercadorias = context.Mercadorias.ToList();
+           this.Mercadorias = context.Mercadorias.Include("Grade").ToList();
            MercadoriaSelecionada = Mercadorias.FirstOrDefault();
         }
 
         public void Salvar()
         {
-            this.context.Mercadorias.Add(Mercadoria);
-            this.context.SaveChanges();
+            var result = (from merc in context.Mercadorias
+                          where Mercadoria.Modelo == merc.Modelo
+                          select merc).FirstOrDefault();
+            if (result == null)
+            {
+                this.context.Mercadorias.Add(Mercadoria);
+                this.context.SaveChanges();
+            }
+            else
+            {
+                MessageBox.Show("Mercadoria já cadastrada");
+            }
         }
 
         public void Editar(Mercadoria m)

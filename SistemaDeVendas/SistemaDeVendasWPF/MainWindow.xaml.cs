@@ -43,12 +43,13 @@ namespace SistemaDeVendasWPF
             window.ShowDialog();
         }
 
-        private void CadastrarClienteMenu2_Click(object sender, RoutedEventArgs e)
+        /*private void CadastrarClienteMenu2_Click(object sender, RoutedEventArgs e)
         {
             Window window = new CadPJWindow();
             window.ShowDialog();
            
         }
+        */
 
         private void VisualizarMercadoriaMenu_Click(object sender, RoutedEventArgs e)
         {

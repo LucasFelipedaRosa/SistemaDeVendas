@@ -7,13 +7,13 @@ namespace SistemaDeVendas.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.3.0")]
-    public sealed partial class Casa02102019 : IMigrationMetadata
+    public sealed partial class GradeTamanho : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Casa02102019));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(GradeTamanho));
         
         string IMigrationMetadata.Id
         {
-            get { return "201910021744566_Casa02102019"; }
+            get { return "201910072217299_Grade.Tamanho"; }
         }
         
         string IMigrationMetadata.Source
